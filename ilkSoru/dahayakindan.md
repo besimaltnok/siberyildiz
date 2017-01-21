@@ -4,7 +4,11 @@ Bu soruda bize bir link verilmişti link ziyaret ediliği zaman, bir görsel ile
 
 * Sayfada ki görsel
 
+<img src="/resimler/7.jpg"/>
+
 * HTTP Response Headers
+
+<img src="/resimler/http.png"/>
 
 
 
