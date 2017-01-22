@@ -1,15 +1,13 @@
-### Holowy Conz - Holowy Conz den beklediğimiz mesaj geldi, acaba nedir ?
+### Holowy Conz - Holowy Conz den beklediğimiz mesaj geldi, acaba nedir?
 
 Bu soruda kullanılan araç
  * Stegsolve
  
-**Aracın kurulumu:**
+**Aracın Kurulumu ve Kullanımı:**
 
 ```python
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
-chmod +x stegsolve.jar
-mkdir bin
-mv stegsolve.jar bin/
+java -jar stegsolve.jar
 ```
 
 Resim açıldıktan sonra, analiz gerçekleştirildiği zaman aşağıdaki görselde tanımlanan **QR kod** elde edilmiştir.
@@ -18,7 +16,7 @@ Resim açıldıktan sonra, analiz gerçekleştirildiği zaman aşağıdaki görs
 
 QR kod okutulduğunda, **siberstar** adı elde edilmekteydi.
 
-Bundan sonraki süreç internet üzerinden araştırma yapmak üzereydi. Bu soru için açılmış bir kullanıcı adı mevcuttu, twitter da.
+Bundan sonraki süreç internet üzerinden araştırma yapmak üzereydi. Bu soru için twitterda açılmış bir kullanıcı mevcuttu.
 
 **Hesap:**
  * https://twitter.com/siber_star
