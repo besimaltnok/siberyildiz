@@ -12,7 +12,7 @@ mkdir bin
 mv stegsolve.jar bin/
 ```
 
-Resim açıldıktan sonra, analiz gerçekleştirildiği zaman aşağıdaki görselde tanımlanan **R kod** elde edilmiştir.
+Resim açıldıktan sonra, analiz gerçekleştirildiği zaman aşağıdaki görselde tanımlanan **QR kod** elde edilmiştir.
 
 <img src="/resimler/stegsolve.png"/>
 
