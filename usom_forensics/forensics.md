@@ -4,7 +4,7 @@ Bu soruda bizlere bir dosya verilmişti.
 
 * **Dosya ismi :** usom-forensics
 
-Bu gibi sorularda ilk olarak yapmamız gereken şey dosya hakkında bilgi almak için "file" komutunu kullanmaktır. Bizde bu soruda bu komu ile dosyayı incelediğimizde aşağıdaki gibi bir sonuç ile karşılaştık.
+Bu gibi sorularda ilk olarak yapmamız gereken şey dosya hakkında bilgi almak için "**file**" komutunu kullanmaktır. Bizde bu soruda bu komu ile dosyayı incelediğimizde aşağıdaki gibi bir sonuç ile karşılaştık.
 
 * **Komut:** file usom-forensics
 
@@ -28,7 +28,7 @@ Bunun için ilk olarak image hakkında bilgi almak için aşağıdaki komutu kul
 * **Komut:** volatility -f usom-forensics imageinfo
  - "-f": incelenecek dosya tanımlanır.
  
-RAM imajı analizi sorularında genelde ilk yapılması gereken şey, "pslist" komutu ile çalışan işlemleri listelemek ve sistemde o anda ki işleyiş hakkında bilgi sahibi olmaktır.
+RAM imajı analizi sorularında genelde ilk yapılması gereken şey, "**pslist**" komutu ile çalışan işlemleri listelemek ve sistemde o anda ki işleyiş hakkında bilgi sahibi olmaktır.
 
 * **Komut:** volatility -f usom-forensics --profile=Win7SP0x86 pslist
 
@@ -50,20 +50,20 @@ Zaten bize sorulan şey bir parolaydı.
 
 Bu nedenle volatility içerisinde kullanılabilen hashdump parametresi de denenebilirdi. Ancak burda da tatmin edici bir sonuç yoktu.
 
-"pslist" dışında en çok işinize yarayacak bir diğer parametre "filescan" parametresidir.
+"pslist" dışında en çok işinize yarayacak bir diğer parametre "**filescan**" parametresidir.
 
-Dosya üzerinde "filescan" çalıştırıldığında flag adı ile bazı dosyalar olduğu gözlemlenmiştir.
+Dosya üzerinde "**filescan**" çalıştırıldığında flag adı ile bazı dosyalar olduğu gözlemlenmiştir.
 
 * **Komut:** volatility -f usom-forensics --profile=Win7SP0x86 filescan
 
  <img src="/resimler/filescan.png" />
 
 
-Bu veriler "dumpfiles" parametresi ile elde edilebiliyordu. 
+Bu veriler "**dumpfiles**" parametresi ile elde edilebiliyordu. 
 
  <img src="/resimler/dumpfiles.png" />
 
-Elde edilen bu verilerden flag.txt incelendiğinde lsass dump dosyasına ait bir link elde ediliyordu.
+Elde edilen bu verilerden **flag.txt** incelendiğinde lsass dump dosyasına ait bir link elde ediliyordu.
 
  <img src="/resimler/flag.png" />
 
