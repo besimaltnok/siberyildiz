@@ -71,9 +71,9 @@ Bu dump mimikatz ile incelendiğinde parola elde edilebiliyordu.
 
 Adımlar: 
 
-* privilege::debug
-* sekurlsa::minidump lsass
-* sekurlsa::logonPasswords
+ * privilege::debug
+ * sekurlsa::minidump lsass
+ * sekurlsa::logonPasswords
 
  <img src="/resimler/pass.png" />
 
