@@ -2,22 +2,22 @@
 
 Bu soruda bizlere bir dosya verilmişti.
 
-* Dosya ismi : usom-forensics
+* **Dosya ismi :** usom-forensics
 
 Bu gibi sorularda ilk olarak yapmamız gereken şey dosya hakkında bilgi almak için "file" komutunu kullanmaktır. Bizde bu soruda bu komu ile dosyayı incelediğimizde aşağıdaki gibi bir sonuç ile karşılaştık.
 
-* Komut: file usom-forensics
+* **Komut:** file usom-forensics
 
 <img src="/resimler/file.png" />
 
 
 Bu bilgiden sonra "mv" komutu ile dosyanın uzantısını değiştiriyoruz.
 
-* Komut: mv usom-forensics usom-forensics.7z
+* **Komut:** mv usom-forensics usom-forensics.7z
 
 Daha sonra "7za" aracı ile dosya içerisindeki veriyi çıkartıyoruz.
 
-* Komut: 7za e usom-forensics.7z
+* **Komut:** 7za e usom-forensics.7z
 
 <img src="/resimler/7ze.png" />
 
@@ -25,12 +25,12 @@ Daha sonra "7za" aracı ile dosya içerisindeki veriyi çıkartıyoruz.
 
 Bunun için ilk olarak image hakkında bilgi almak için aşağıdaki komutu kullanıyoruz.
 
-* Komut: volatility -f usom-forensics imageinfo
+* **Komut:** volatility -f usom-forensics imageinfo
  - "-f": incelenecek dosya tanımlanır.
  
 RAM imajı analizi sorularında genelde ilk yapılması gereken şey, "pslist" komutu ile çalışan işlemleri listelemek ve sistemde o anda ki işleyiş hakkında bilgi sahibi olmaktır.
 
-* Komut: volatility -f usom-forensics --profile=Win7SP0x86 pslist
+* **Komut:** volatility -f usom-forensics --profile=Win7SP0x86 pslist
 
 <img src="/resimler/pslist.png" />
 
@@ -54,7 +54,7 @@ Bu nedenle volatility içerisinde kullanılabilen hashdump parametresi de denene
 
 Dosya üzerinde "filescan" çalıştırıldığında flag adı ile bazı dosyalar olduğu gözlemlenmiştir.
 
-* Komut: volatility -f usom-forensics --profile=Win7SP0x86 filescan
+* **Komut:** volatility -f usom-forensics --profile=Win7SP0x86 filescan
 
  <img src="/resimler/filescan.png" />
 
@@ -69,7 +69,7 @@ Elde edilen bu verilerden flag.txt incelendiğinde lsass dump dosyasına ait bir
 
 Bu dump mimikatz ile incelendiğinde parola elde edilebiliyordu.
 
-Adımlar: 
+**Adımlar:** 
 
  * privilege::debug
  * sekurlsa::minidump lsass
