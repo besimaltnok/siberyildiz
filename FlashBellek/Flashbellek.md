@@ -34,6 +34,14 @@ Kurtardığımız resimleri açtmaya çalıştığımzda açılmadıklarını g�
 
 <img src="/resimler/bozukbaslık.png"/>
 
+Bozuk başlık bilgisini düzeltmek için:
+
+```python
+ HxD Hex Editör aracı ile bozuk resimi açın. 
+ Daha sonra aynı tipte bir resim daha açın (png ise png, jpeg ise jpeg). 
+ Çalışan resmin başlık bilgisini alıp, bozuk olan resime ekleyin.
+```
+
 Başlık bilgsini düzelttikten sonra **"usom"** resminin exif bilgilerinde flag değerinin olduğunu gördük.
 
 <img src="/resimler/exif.png"/>
