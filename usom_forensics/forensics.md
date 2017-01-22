@@ -36,9 +36,9 @@ RAM imajı analizi sorularında genelde ilk yapılması gereken şey, "pslist" k
 
 Bu çıktı sonucunda dikkat çeken işlemler:
 
+ - mspaint.exe
  - notepad.exe
  - lsass.exe
- - mspaint.exe
  
  mspaint.exe dumpı alınıp gimp ile incelenip üzerine çalışılan resim üzerinden bilgi elde edilebilir. CTF lerde bu tarz sorular görüyoruz. Ancak böyle bir inceleme sonucunda aşağıdaki gibi bir sonuç ile karşılaştık.
  
